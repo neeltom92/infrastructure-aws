@@ -23,11 +23,9 @@ variable "private_subnets_cidr" {
 }
 
 variable "region" {
-  description = "Region in which the bastion host will be launched"
+  description = "Region in which the VPC will be launched"
   default     = "ap-southeast-1"
 }
 
-/*variable "availability_zones" {
-  type        = list(any)
-  description = "AZ in which all the resources will be deployed"
-}*/
+
+
