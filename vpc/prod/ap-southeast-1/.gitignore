@@ -38,3 +38,8 @@ terraform.rc
 
 # DS ignore
 .DS_Store
+
+
+# Intellij
+
+.idea
