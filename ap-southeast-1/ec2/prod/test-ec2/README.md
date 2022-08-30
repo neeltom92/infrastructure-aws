@@ -1,0 +1,1 @@
+this is a test ec2 instance to check the terragrunt set up
