@@ -8,7 +8,7 @@ terraform {
 inputs = {
   aws_region             = "ap-southeast-1"
   cluster_name           = "test-neel-eks"
-  cluster_version        = "1.24"
+  cluster_version        = "1.23"
   vpc_id                 = "vpc-0495606425976acd0"
   aws_account_id         = "998439965296"
   sshkeys                = "this-is-a-test"
