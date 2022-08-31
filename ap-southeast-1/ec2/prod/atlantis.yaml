@@ -19,13 +19,9 @@ workflows:
     plan:
       steps:
       - run: echo "In Terraform Init and Plan"
-      - init 
       - run: terragrunt init
-      - plan
       - run: terragrunt plan -lock=false
     apply:
       steps:
-      - run: echo "In Terraform Apply"
-      - apply
       - run: terragrunt apply -auto-approve
 
