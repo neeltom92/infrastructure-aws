@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "git::https://github.com/neeltom92/infrastructure-modules.git//eks?ref=v1.1.15"
+  source = "git::https://github.com/neeltom92/infrastructure-modules.git//eks?ref=v1.1.16"
 }
 inputs = {
   aws_region             = "ap-southeast-1"
