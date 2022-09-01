@@ -8,7 +8,7 @@ terraform {
 inputs = {
 
   ami                    = "ami-02ee763250491e04a"
-  instance_type          = "t2.micro"
+  instance_type          = "t3.medium"
   key_name               = "this-is-a-test"
   monitoring             = true
   vpc_security_group_ids = ["sg-0c87f5ffae3d4f99c"]
