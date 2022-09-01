@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "git::https://github.com/neeltom92/infrastructure-modules.git//ec2?ref=v0.0.2"
+  source = "git::https://github.com/neeltom92/infrastructure-modules.git//ec2?ref=v1.1.19"
 }
 inputs = {
 
