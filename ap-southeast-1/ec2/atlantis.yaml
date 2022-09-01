@@ -1,6 +1,6 @@
 version: 3
 projects:
-- dir: ap-southeast-1/ec2/prod/test-ec2
+- dir: prod/test-ec2
   workflow: terragrunt
 workflows:
   terragrunt:
