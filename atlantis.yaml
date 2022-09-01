@@ -1,13 +1,8 @@
-version: 2
+version: 3
 projects:
 - name : atlantis-neel
   dir: ap-southeast-1/ec2/prod/test-ec2
-  workflow: terragrunt
-  workspace: default
-  autoplan:
-    when_modified: ["*.hcl"]
-    enabled: true
-  apply_requirements: [approved]  
+  workflow: terragrunt  
 workflows:
   terragrunt:
     plan:
