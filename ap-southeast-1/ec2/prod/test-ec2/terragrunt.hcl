@@ -13,6 +13,6 @@ inputs = {
   monitoring             = true
   vpc_security_group_ids = ["sg-0c87f5ffae3d4f99c"]
   subnet_id              = "subnet-06dad76c7bf5bb17c"
-  ec2name                = "this-is-a-test"
+  ec2name                = "this-isjghgh-a-test"
 }
 
