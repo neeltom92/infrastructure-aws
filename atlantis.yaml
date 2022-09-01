@@ -1,8 +1,6 @@
 version: 3
 projects:
-- dir: live/staging
-  workflow: terragrunt
-- dir: live/prod
+- dir: ap-southeast-1/ec2/prod/test-ec2
   workflow: terragrunt
 workflows:
   terragrunt:
