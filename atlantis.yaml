@@ -1,18 +1,18 @@
-version: 3
+version: 2
 projects:
-- dir: ap-southeast-1/ec2/prod/test-ec2
+- name : atlantis-neel
+  dir: ap-southeast-1/ec2/prod/test-ec2
   workflow: terragrunt
+  workspace: default
+  autoplan:
+    when_modified: ["*.hcl"]
+    enabled: true
+  apply_requirements: [approved]  
 workflows:
   terragrunt:
     plan:
       steps:
-      - env:
-          name: TERRAGRUNT_TFPATH
-          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
-      - run: terragrunt plan -out $PLANFILE
+      - run: terragrunt plan --no-color -out $PLANFILE
     apply:
       steps:
-      - env:
-          name: TERRAGRUNT_TFPATH
-          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
-      - run: terragrunt apply $PLANFILE
+      - run: terragrunt apply --no-color $PLANFILE
