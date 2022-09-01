@@ -1,4 +1,5 @@
-# THIS README IS NOT COMPLETE, ITS A WORK IN PROGRESS
+# this readme is not complete, its a work in progress
+
 #infrastructure
 this repo holds all infrastructure details
 
